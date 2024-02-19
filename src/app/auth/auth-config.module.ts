@@ -13,7 +13,7 @@ import { AuthModule, LogLevel } from 'angular-auth-oidc-client';
             silentRenew: true,
             useRefreshToken: true,
             logLevel: LogLevel.Debug,
-            secureRoutes:['http://localhost:8080/api/videos/'], //securing the backend 
+            secureRoutes:['http://localhost:8080/'], //securing the backend 
             customParamsAuthRequest:{
                 audience: 'http://localhost:8080'
             }

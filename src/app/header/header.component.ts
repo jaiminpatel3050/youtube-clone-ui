@@ -23,7 +23,8 @@ export class HeaderComponent {
     console.log("login called");
   }
 
-  logout() {
-    this.oidcSecurityService.logoff().subscribe((result) => console.log(result));
+  logOff() {
+    this.oidcSecurityService.logoffAndRevokeTokens();
+    this.oidcSecurityService.logoffLocal();
   }
 }
